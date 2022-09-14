@@ -1,0 +1,32 @@
+<section>
+  <fieldset>
+  <label for="">Rut del alumno</label>
+  <input type="text" name="nombre" [value]="nuevoAlumno.Rut" (input)="cambiarRut($event)">
+  </fieldset>
+  <fieldset>
+    <label for="">Nombre del alumno</label>
+    <input type="text" name="nombre" [value]="nuevoAlumno.nombre($event)" >
+    </fieldset>
+    <fieldset>
+      <label for="">Apellido del alumno</label>
+      <input type="text" name="nombre" [value]="nuevoAlumno.nombre($event)" >
+      </fieldset>
+    <fieldset>
+      <label for="">Edad del alumno</label>
+      <input type="text" name="Apellido" [value]="nuevoAlumno.Apellido($event)" >
+      </fieldset>
+
+    <fieldset>
+      <label for="">Seleccione el tipo de seccion</label>
+      <select name="tipo" [value]="nuevoAlumno.seccion" (change)="cambiarSeccion($event)">
+        <option value="MATEMATICA">MAT</option>
+        <option value="LENGUAJE">LEN</option>
+        <option value="PROGRAMACION">PRO</option>
+        <option value="BASEDEDATOS">BDD</option>
+      </select>
+      </fieldset>
+      <fieldset>
+        <button (click="guardarElemento()")>Guardar Datos</button>
+      </fieldset>
+
+</section>

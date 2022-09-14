@@ -1,0 +1,13 @@
+<section>
+  <fieldset>
+    <label for="">Nombre de la seccion</label>
+    <input type="text" name="seccion" [value]="nuevoAlumno.seccion($event)" >
+    </fieldset>
+  <fieldset>
+    <label for="">Id</label>
+    <input type="text" name="Id" [value]="nuevoAlumno.Id" (input)="cambiarRut($event)">
+    </fieldset>
+    <fieldset>
+      <button (click="guardarElemento()")>Guardar Datos</button>
+    </fieldset>
+</section>
